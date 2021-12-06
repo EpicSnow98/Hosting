@@ -103,3 +103,254 @@
 </body>
 
 </html>
+body{
+    /*backround-color */
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(145, 100, 151);
+}
+/*le damos */
+header{
+    height: 120px;
+    width: 100%;
+    background-color: rgb(145, 100, 151);
+    border-bottom: 1px solid #ccc;
+}
+.center{
+    width: 75%;
+    margin: 0px auto;
+
+}
+
+#logo{
+    width: 30%;
+    font-size: 24px;
+    float: left;
+    margin-top: 30px;
+}
+
+#logo:hover{
+animation: crecer infinite 5s linear;
+animation: rotate infinite 2s linear;
+}
+
+#logo img{
+    display: block;
+    float: left;
+    height: 60px;
+    margin-top: 5px;
+    margin-right: 1px;
+    margin-left: 40px;
+
+}
+#brand{
+    font-size: 30px;
+    display: block;
+    float: right;
+    margin-top: 10px
+}
+#menu{
+    width: 70%;
+    float: right;
+    font-size: 16px;
+
+}
+#menu ul{
+    line-height: 80px;
+    width: 60%;
+    float: right;
+}
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+    transition: 300ms all;
+}
+#menu a:hover{
+    color: rgb(153, 17, 180);
+    font-size: 18px;
+}
+#menu a:active{
+   color: red;
+   font-size: 18px;
+
+}
+
+#slider{
+    width: 100%;
+    height: 350px;
+    color: white;
+    text-shadow: 1px 1px 5px #444;
+    background-color:  rgb(0, 252, 239);
+}
+#slider h1{
+    margin-top: 1px;
+    padding: 0px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+#main{
+    width: 70%;
+    float: left;
+    min-height:400px ;
+    margin-top: 10px;
+
+}
+.centermain{
+  
+        width: 90%;
+        margin: 0px auto;
+    
+
+}
+
+.galeria:hover{
+    animation: crecer infinite 5s linear;
+    animation: rotate infinite 5s linear;
+}
+.galeria li {
+    display: inline;
+    float: left;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    margin: 5px;
+
+}
+.galeria li img{
+    border: 1px solid#ddd;
+    border-radius: 15px;
+    padding: 5px;
+   width: 100%;
+   height: 100%;
+   
+
+}
+
+/* diseño de sidebar */
+#sidebar{
+    width: 30%;
+    float: right;
+}
+
+
+.sidebar-item{
+    background: #a5a5a5;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.btn{
+    display: block;
+    background: rgb(17, 17, 15);
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    max-width: 120px;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    background: #a5a5a5;
+    color: aqua;
+    text-align: center;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+.secondary{
+    width: 100%;
+    min-height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: white;
+    border-top: 1px solid #ccc;
+ 
+}
+.secondary h2{
+    text-align: center;
+    color:rgba(228, 15, 228, 0.534);
+
+}
+.secondary p{
+    width: 80%;
+    margin: 30px auto;
+    font-size: 20px;
+    text-align: justify;
+}
+/* diseño tabla conteiner*/
+.container{
+width: 100%;
+margin-top: 15px;
+border-top: 1px solid #ccc;
+
+}
+.mytable{
+    width: 80%;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+footer{
+    width: 100%;
+    background-color: #c0bdbd;
+    height: 70px;
+    color: rgba(226, 10, 10, 0.219);
+    line-height: 70px;
+    display: block;
+    text-align: center;
+}
+footer p{
+    margin-top: 0px;
+    display: inline;
+    padding-bottom: opx;
+    margin: 0px auto;
+}
+
+
+
+
+@keyframes crecer{
+    0%{
+        transform: scale(2,2);
+    }
+    25%{
+        transform: scale(2,2,2);
+    }
+    50%{
+        transform: scale(2,2);
+    }
+    100%{
+        transform: scale(2,2,2);
+    }
+}
+
+@keyframes rotate{
+    0%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+}
